@@ -1,0 +1,152 @@
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    height: 1500px;
+    background-color: #222;
+    color: #fff;
+}
+
+.cruds {
+    width: 80%;
+    margin: 25px auto;
+}
+
+header {
+    text-align: center;
+}
+
+input {
+    padding: 5px 8px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+input:focus {
+    transform: scale(1.1);
+    background-color: #fff;
+    color: #000;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 0 0;
+}
+
+button {
+    background-color: blue;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: .3s;
+}
+
+#delete_all {
+    width: 100%;
+}
+
+button:hover {
+    background-color: blueviolet;
+}
+
+.input .total {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 8px;
+}
+
+.input .total input {
+    width: calc(100% / 5);
+}
+
+.total .totals {
+    background-color: #f50;
+    color: #fff;
+    padding: 2px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.output {
+    margin: 15px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.output .btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    margin: 15px 0 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+th {
+    text-transform: uppercase;
+}
+
+table tr {
+    margin: 2px 0;
+}
+
+th, td {
+    padding: 2px 0;
+}
+
+#update, #delete {
+    background-color: blue;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#update:hover,
+#delete:hover {
+    background-color: blueviolet;
+}
+
+.popup {
+    padding: 8px 5px;
+    margin: 15px 0;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.success {
+    background-color: green;
+    color: #fff;
+}
+
+.danger {
+    background-color: red;
+    color: #fff;
+}
+
+
+
+
